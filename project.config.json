@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "coupons-aides",
+  "description": "优惠券助手，闭环流程为编辑优惠券、生成优惠券、核销优惠券，单次可生成一张或多张，可通过活动方式创建优惠券",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
