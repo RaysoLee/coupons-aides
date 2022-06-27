@@ -1,6 +1,6 @@
 const config = {
-  projectName: 'coupons-aides',
-  date: '2022-6-12',
+  projectName: 'newtest',
+  date: '2022-6-27',
   designWidth: 750,
   deviceRatio: {
     640: 2.34 / 2,
@@ -10,13 +10,10 @@ const config = {
   sourceRoot: 'src',
   outputRoot: 'dist',
   plugins: [],
-  defineConstants: {
-  },
+  defineConstants: {},
   copy: {
-    patterns: [
-    ],
-    options: {
-    }
+    patterns: [],
+    options: {}
   },
   framework: 'react',
   mini: {
@@ -45,11 +42,11 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['taro-ui'],
     postcss: {
       autoprefixer: {
         enable: true,
-        config: {
-        }
+        config: {}
       },
       cssModules: {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
@@ -62,7 +59,7 @@ const config = {
   }
 }
 
-module.exports = function (merge) {
+module.exports = function(merge) {
   if (process.env.NODE_ENV === 'development') {
     return merge({}, config, require('./dev'))
   }

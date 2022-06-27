@@ -1,24 +1,24 @@
-import { Component } from 'react'
+import { useState, useEffect } from 'react'
 import { View, Text } from '@tarojs/components'
-import './index.less'
+import { AtButton, AtIcon } from 'taro-ui'
+import './index.scss'
 
-export default class Index extends Component {
+const Index = () => {
+  const [diy, setDiy] = useState("rayso")
 
-  componentWillMount () { }
+  useEffect(() => {
+    setDiy("missLee")
+  }, [])
 
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
-  render () {
-    return (
-      <View className='index'>
-        <Text>Hello world!</Text>
-      </View>
-    )
+  const onClick = () => {
+    console.log("test success")
   }
+
+  return <View className='index'> 
+    <Text>Hello world!</Text>
+    <AtButton type='primary' onClick={onClick}>{`${diy} click`}</AtButton>
+    <AtIcon value='clock' size='30' color='#F00'></AtIcon>
+  </View>
 }
+export default Index
+   

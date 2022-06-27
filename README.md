@@ -1,2 +1,1 @@
-# coupons
-券管家小程序代码库，管理店铺、生成优惠券（单张/多张）、抢券活动
+## npm install taro-ui@v3.0.0-alpha.1 --save
